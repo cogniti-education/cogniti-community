@@ -1,2 +1,2 @@
-# cogniti-managed-application-services
-Repository for the centralised Cogniti services and resources that support the marketplace deployment.
+# cogniti-community
+Repository for community feedback, support docs, issues etc.
