@@ -29,6 +29,14 @@ This repository serves as a hub for:
 
 ## 📚 Resources
 
+### Azure Marketplace
+
+- [Configuration Guide](docs/configuration/README.md)
+- [Azure Front Door](docs/configuration/AzureFrontDoor.md)
+- [Application Configuration](docs/configuration/AppConfig.md)
+
+### External
+
 - [Official Website](https://cogniti.ai)
 - [Try It Out](https://cogniti.ai/try-it-out/)
 - [Documentation](https://cogniti.ai/docs/)
