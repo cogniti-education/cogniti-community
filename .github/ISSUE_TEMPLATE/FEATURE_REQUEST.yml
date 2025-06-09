@@ -1,0 +1,48 @@
+name: "Feature Request & Ideas 🚀"
+description: Suggest a new feature or improvement for Cogniti
+title: "Feature: "
+labels:
+  - feature
+  - enhancement
+  - backlog
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to suggest a new feature or improvement for Cogniti! Before submitting, please ensure that your idea hasn't already been proposed by searching through existing issues.
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: What is the feature or idea?
+      description: Provide a clear and concise description of the feature or improvement you're proposing.
+      placeholder: |
+        e.g., "Add support for integrating Cogniti agents with..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_reason
+    attributes:
+      label: Why is this feature important?
+      description: Explain the problem this feature would solve or the benefit it would provide to users.
+      placeholder: |
+        e.g., "Integrating with X would allow educators to reach students on a platform they already use daily, increasing engagement and accessibility."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context or resources
+      description: Share any additional information, mockups, or references that could help us understand your proposal better.
+      placeholder: |
+        e.g., "Similar functionality is available in [Competitor Platform], which has improved user engagement by 25%."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Once submitted, our team will review your suggestion and consider it for future development. We appreciate your contribution to making Cogniti better!

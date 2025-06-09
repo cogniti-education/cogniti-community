@@ -1,0 +1,71 @@
+name: "Azure Marketplace Issue 🛒"
+description: Report issues or provide feedback related to the Azure Marketplace
+title: "Marketplace Issue: "
+labels:
+  - azure-marketplace
+  - needs-triage
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for your problem.
+      options:
+        - label: I have searched the existing issues.
+          required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: What type of issue are you reporting?
+      options:
+        - Billing/Subscription Issue
+        - Offer Configuration
+        - Documentation Feedback
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: offer_id
+    attributes:
+      label: Offer ID or Name
+      description: Provide the ID or name of the Azure Marketplace offer, if applicable.
+      placeholder: e.g., cogniti-edu-prod
+    validations:
+      required: false
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Issue Description
+      description: Describe the issue in detail, including any error messages or unexpected behavior.
+      placeholder: |
+        Provide a clear and concise description of the problem.
+        Include steps to reproduce, if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+      placeholder: Describe the expected outcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the issue.
+      placeholder: Additional information, logs, or screenshots.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this issue. Our team will review it and get back to you as soon as possible.

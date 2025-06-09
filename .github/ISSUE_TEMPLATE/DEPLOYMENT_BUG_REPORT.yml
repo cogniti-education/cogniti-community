@@ -1,0 +1,72 @@
+name: "Deployment Bug Report 🐛"
+description: Report errors or unexpected behavior during deployment of the Azure Marketplace offer
+title: "Bug: "
+labels:
+  - bug
+  - deployment
+  - needs-triage
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for your problem.
+      options:
+        - label: I have searched the existing issues.
+          required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide the steps to reproduce the issue.
+      placeholder: |
+        1. Execute command '...'
+        2. Observe behavior '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+      placeholder: Describe the expected outcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happened.
+      placeholder: Describe the actual outcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: error_messages
+    attributes:
+      label: Error Messages
+      description: If applicable, provide any error messages encountered.
+      placeholder: |
+        ```
+        Error: Deployment failed due to ...
+        ```
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the issue.
+      placeholder: Additional information, logs, or screenshots.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this issue. Our team will review it and get back to you as soon as possible.
